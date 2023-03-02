@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM REGISTER MEMBER</title>
+</head>
+
+<!-- 
+
+    FILE INI MENGGUNAKAN CSS INLINE
+
+-->
+
+<body style="background-color: #000080 ;"><!--Mengatur warna background body-->
+
+    <form action=""> <!--bagian form-->
+        <table style="border: 10px solid; width: 50%; margin: auto; border-color: red;" cellpadding="10" > <!--bagian tabel-->
+
+            <!--tabel header yang berisi penanda besar bahwa website ini adalah website FORM REGISTER MEMBER-->
+            <thead  style="background-color: gold;">
+                <tr>
+                    <th style="font-size: 50px; color: #2600ff;" colspan="2">FORM REGISTER MEMBER</th>
+                </tr>
+            </thead>
+
+            <!--tabel body yang berisi isi dari form ini yaitu username dan password-->
+            <tbody bgcolor="CB1637" style="color:#fcfafa" align="center">
+                <!--bagian username-->
+                <tr>
+                    <!--label memberitahukan kepada pengguna mengenai data yang akan dimasukkan adalah USERNAME-->
+                    <td>
+                        <label for="" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;">USERNAME</label>
+                    </td>
+                    <!--Tipe input yang digunakan pada label username ini adalah teks dengan maksimal panjang karakter 100-->
+                    <td>
+                        <input type="text" name="username" id="" value="" 
+                        placeholder="silahkan masukan username anda" 
+                        size="80%"
+                        maxlength="100">
+                    </td>
+                </tr>
+                <tr>
+                    <!--label memberitahukan kepada pengguna mengenai data yang akan dimasukkan adalah PASSWORD-->
+                    <td>
+                        <label for="" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;">PASSWORD</label>
+                    </td>
+                    <!--Tipe input yang digunakan pada label password ini adalah password dengan maksimal panjang karakter 30-->
+                    <td>
+                        <input type="password" name="password" id="" value="" 
+                        placeholder="silahkan masukan password anda" 
+                        size="80%"
+                        maxlength="30">
+                    </td>
+                </tr>
+            </tbody>
+
+            <!--tabel foot yang berisi isi dari form ini yaitu MASUK dan BATAL-->
+            <tfoot style="background-color: #F5F5F5;">
+                <tr>
+                    <td colspan="2" align="center">
+                        <!--Tipe input yang digunakan pada MASUK ini adalah submit, 
+                            karena fungsinya untuk mengsubmit/mengupload apa yang sudah di input dari label diatas
+                        -->
+                        <input type="submit" name="login" value="MASUK">
+                        <!--Tipe input yang digunakan pada BATAL ini adalah reset,
+                            karena fungsinya untuk mengembalikan isi dari apa yang sudah di input dari label diatas
+                        -->
+                        <input type="reset" value="BATAL">
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </form>
+    
+</body>
+</html>
