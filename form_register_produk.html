@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM REGISTER PRODUK</title>
+</head>
+
+<body bgcolor="#000080"> <!--Mengatur warna background body-->
+    
+    <form action=""> <!--bagian form-->
+        <table border="10" width="50%" cellpadding="10" cellspasing="30" bordercolor="red" align="center"> <!--bagian tabel-->
+
+            <!--tabel header yang berisi penanda besar bahwa website ini adalah website FORM REGISTER PRODUK DARI TOKO PAKAIAN-->
+            <thead  bgcolor="F1DF27">
+                <tr>
+                    <th colspan="2"><font size="10" color="#2600ff">FORM REGISTER PRODUK<br>TOKO PAKAIAN</font></th>
+                </tr>
+            </thead>
+
+            <!--tabel body yang berisi isi dari form ini yaitu :
+                Nama Produk, Jenis Produk, Harga, Stok, dan Photo
+            -->
+            <tbody bgcolor="CB1637" style="color:#fcfafa" align="center">
+                <!--Bagian Nama Produk-->
+                <tr>
+                    <!--label memberitahukan kepada pengguna mengenai data yang akan dimasukkan adalah Nama Produk-->
+                    <td>
+                        <label for=""> <font size="5" face="arial">Nama Produk</font></label>
+                    </td>
+                    <!--Tipe input yang digunakan pada label Nama Produk ini adalah teks dengan maksimal panjang karakter 100-->
+                    <td>
+                        <input type="text" name="nama_produk" id="" value="" 
+                        placeholder="masukan nama produk" 
+                        size="80%"
+                        maxlength="100">
+                    </td>
+                </tr>
+
+                <!--Bagian Jenis Produk-->
+                <tr>
+                    <!--label memberitahukan kepada pengguna mengenai data yang akan dimasukkan adalah Jenis Produk-->
+                    <td>
+                        <label for=""><font size="5" face="arial">Jenis Produk</font></label>
+                    </td>
+                    <!--Tipe input yang digunakan pada label Jenis Produk ini adalah select atau dropdown dengan 4 opsi didalamnya-->
+                    <td>
+                        <select name="Kategori Produk" id="" value="" name="Jenis_Produk">
+                            <option hidden=""> -- Kategori Produk -- </option>
+                            <option value="Koleksi atasan">Koleksi Atasan</option>
+                            <option value="Koleksi Bawahan">Koleksi Bawahan</option>
+                            <option value="Koleksi Luaran">Koleksi Luaran</option>
+                            <option value="Koleksi Aksesoris">Koleksi Aksesoris</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!--Bagian Harga-->
+                <tr>
+                    <!--label memberitahukan kepada pengguna mengenai data yang akan dimasukkan adalah Harga-->
+                    <td>
+                        <label for=""><font size="5" face="arial">Harga</font></label>
+                    </td>
+                    <!--Tipe input yang digunakan pada label Harga ini adalah number, 
+                        karena agar data yang di input berisi hanya dalam bentuk angka saja
+                    -->
+                    <td>
+                        <input type="number" name="harga" id="" value="" 
+                        placeholder="masukan harga produk" 
+                        size="80%">
+                    </td>
+                </tr>
+
+                <!--Bagian Stok-->
+                <tr>
+                    <!--label memberitahukan kepada pengguna mengenai data yang akan dimasukkan adalah Stok-->
+                    <td>
+                        <label for=""><font size="5" face="arial">Stok</font></label>
+                    </td>
+                    <!--Tipe input yang digunakan pada label Stok ini adalah number 
+                        dengan ketentuan input minimal dari 1 hingga 500, 
+                        karena agar data yang di input berisi hanya dalam bentuk angka saja
+                    -->
+                    <td>
+                        <input type="number" name="stok" id="" value="" 
+                        placeholder="masukan jumlah stok" 
+                        size="80%" 
+                        min="1" max="500">
+                    </td>
+                </tr>
+
+                <!--Bagian Photo-->
+                <tr>
+                    <!--label memberitahukan kepada pengguna mengenai data yang akan dimasukkan adalah Photo-->
+                    <td>
+                        <label for=""><font size="5" face="arial">Photo</font></label>
+                    </td>
+                    <!--Tipe input yang digunakan pada label Photo ini adalah file 
+                        karena agar data yang di input berisi hanya dalam bentuk format file saja
+                    -->
+                    <td>
+                        <input type="file" name="photo" id="" value="" 
+                        placeholder="masukan photo produk">
+                    </td>
+                </tr>
+            </tbody>
+
+            <!--tabel foot yang berisi isi dari form ini yaitu MASUK dan BATAL-->
+            <tfoot bgcolor="#F5F5F5">
+                <tr>
+                    <td colspan="2" align="center">
+                        <!--Tipe input yang digunakan pada SUBMIT ini adalah submit, 
+                            karena fungsinya untuk mengsubmit/mengupload apa yang sudah di input dari label diatas
+                        -->
+                        <input type="submit" name="kirim" value="SUBMIT">
+                        <!--Tipe input yang digunakan pada RESET ini adalah reset,
+                            karena fungsinya untuk mengembalikan isi dari apa yang sudah di input dari label diatas
+                        -->
+                        <input type="reset" value="RESET">
+                    </td>
+                </tr>
+            </tfoot>
+        
+        </table>
+    </form>
+    
+</body>
+</html>
